@@ -58,23 +58,27 @@ export default {
 
 <style scoped lang="sass">
 .main-menu
+  overflow-x: hidden
   &__container
     position: absolute
     top: 83px
-    right: -1000px
+    right: -100vw
     box-sizing: border-box
     display: flex
     flex-direction: column
-    height: calc(100vh - 83px)
-    width: 85%
+    height: 0
+    width: 0
     margin: 0
-    padding-top: 20px
-    padding-left: 30px
     background-color: #ffffff
     box-shadow: -2px 5px 10px rgba(#000, .2), inset 1px 0 5px rgba(#000, .1)
     transition: .03s
+    overflow: hidden
     &.opened
       right: 0
+      height: calc(100vh - 83px)
+      width: 85vw
+      padding-top: 20px
+      padding-left: 30px
       transition: .3s
   &__item
     padding: 10px
