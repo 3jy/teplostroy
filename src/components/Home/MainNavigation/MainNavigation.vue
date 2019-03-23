@@ -26,6 +26,17 @@ export default {
 .main-navigation
   width: 100vw
   overflow-x: hidden
+  z-index: 3
+  @media (min-width: 1024px)
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    background-color: #ffffff
+    box-shadow: 0 2px 10px 5px #00000022
   &__container
     display: flex
+    @media (min-width: 1024px)
+      justify-content: space-between
+      height: 100px
 </style>

@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:700')
+.section-calculator
+  .calculator
+    display: flex
+    flex-wrap: wrap
+    align-items: stretch
+    justify-content: space-around
+    padding:
+      top: 20px
+      left: 2px
+      right: 2px
+      bottom: 20px
+    text-align: center
+    font-size: 1.2em
+    font-weight: 600
+    color: #000
+    border: 3px solid $clr-major
+    border-radius: 15px
+    @media (min-width: 360px)
+      padding: 20px
+    &__amount
+      display: flex
+      align-items: center
+      justify-content: space-between
+      min-width: 300px
+      width: 100%
+      max-width: 325px
+      p
+        margin-top: 0
+    &__fields-group
+      position: relative
+      height: 100%
+      margin-bottom: 20px
+    &__floors
+      display: flex
+      flex-direction: column-reverse
+      height: 100%
+      max-width: 300px
+      padding-top: 10px
+      padding-bottom: 10px
+    &__floor
+      box-sizing: border-box
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      width: 100%
+      padding:
+        top: 10px
+        left: 10px
+        right: 10px
+        bottom: 30px
+      margin-bottom: 4px
+      background-image: linear-gradient(-165deg, $clr-major-0 0%, $clr-major-3 100%)
+      border-radius: 10px
+      &-label
+        width: 100%
+        margin-bottom: 20px
+        text-align: right
+        font-size: 14px
+        font-weight: 800
+        line-height: 1.2
+        color: #ffffff
+    &__fieldset
+      position: relative
+      display: flex
+      flex-direction: row
+      height: 70px
+      width: 55px
+      margin:
+        top: 0
+        left: 0
+        right: 1px
+        bottom: 0
+      padding: 0
+      border: none
+      background:
+        color: transparent
+        position: 6px 4px
+        repeat: no-repeat
+        size: 30px 30px
+      @media (min-width: 800px)
+        background:
+          position: 6px 4px
+          size: 34px 34px
+      &:before
+        content: ''
+        box-sizing: border-box
+        position: absolute
+        top: 0px
+        left: 3px
+        height: 36px
+        width: 36px
+        border: 2px solid #ffe6d5
+        border-radius: 6px
+        @media (min-width: 800px)
+          height: 40px
+          width: 40px
+      &:after
+        position: absolute
+        top: -20px
+        left: -15px
+        height: 17px
+        width: 75px
+        font-size: 9px
+        text-align: center
+        color: #ffffff
+        @media (min-width: 1024px)
+          opacity: 0
+          transition: 1s
+      &:hover:after
+        opacity: 1
+        transition: 1s
+      &_warm-floor
+        background-image: url('./img/floor.png')
+        &:after
+          content: 'Теплые полы'
+      &_radiators
+        background-image: url('./img/heat.png')
+        &:after
+          content: 'Радиаторы'
+      &_kitchen
+        background-image: url('./img/dishwasher.png')
+        &:after
+          content: 'Кухня'
+      &_bathrooms
+        background-image: url('./img/shower.png')
+        &:after
+          content: 'Ванная'
+      &_restrooms
+        background-image: url('./img/wc-sign.png')
+        &:after
+          content: 'Туалет'
+    &__label
+      display: none
+    &__field
+      position: relative
+      flex-basis: 50px
+      display: flex
+      align-items: flex-end
+      justify-content: flex-end
+      width: 50px
+      max-width: 50px
+      padding:
+        right: 3px
+        bottom: 3px
+      font-family: 'Ubuntu Mono', monospace
+      font-size: 14px
+      color: $clr-added-2
+      z-index: 1
+      @media (min-width: 800px)
+        padding: 6px
+      &:before
+        content: ''
+        position: absolute
+        right: 2px
+        bottom: 2px
+        width: 34px
+        height: 18px
+        background-color: #ffffff
+        border-radius: 5px
+        z-index: -1
+        @media (min-width: 800px)
+          right: 5px
+          bottom: 5px
+      input
+        position: relative
+        right: -1px
+        bottom: -1px
+        max-width: 30px
+        margin: 0
+        padding: 2px
+        text-align: right
+        font-size: 14px
+        border: none
+        color: $clr-added-2
+        background-color: #ffffff
+        border-radius: 5px
+        z-index: 1
+    &__buttons
+      position: relative
+      flex-basis: 10px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      height: 50px
+      width: 15px
+      padding-top: 3px
+      padding-bottom: 3px
+      margin-top: 18px
+      @media (min-width: 800px)
+        height: 40px
+        width: 10px
+        margin-top: 34px
+      &:after
+        content: ''
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        background-image: linear-gradient(0deg, $clr-minor-2 0%, $clr-minor-4 100%)
+    &__btn
+      height: 22px
+      width: 15px
+      padding: 0
+      margin: 0
+      border: none
+      background-color: transparent
+      cursor: pointer
+      @media (min-width: 800px)
+        height: 15px
+        width: 10px
+      &:focus, &:active, &:focus
+        outline: none
+      &_floor
+        position: absolute
+        height: 30px
+        width: 30px
+        padding-bottom: 5px
+        font-weight: 800
+        line-height: 10px
+        color: #ffffff
+        border-radius: 20px
+        background:
+          image: linear-gradient(0deg, $clr-major-0 0%, $clr-major-3 100%)
+        border: 2px solid #ffffff
+        z-index: 1
+      &_inc-floor
+        top: 0
+        left: 3px
+      &_dec-floor
+        bottom: 0
+        right: 3px
+      &_inc-element, &_dec-element
+        background:
+          position: center
+          repeat: no-repeat
+          size: cover
+        span
+          display: none
+      &_inc-element
+        background-image: url('./img/arrow-up.png')
+      &_dec-element
+        background-image: url('./img/arrow-down.png')
+    &__caption
+      margin-top: 0
+    &__list
+      margin-bottom: 20px
+      &-item
+        display: flex
+        justify-content: space-between
+        p
+          margin-top: 0
+          margin-bottom: 10px
+    &__order
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+    &__order-btn
+      padding:
+        top: .5em
+        left: 2em
+        right: 2em
+        bottom: .5em
+      margin-bottom: 30px

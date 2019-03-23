@@ -3,9 +3,111 @@ body
   font-size: 16px
   overflow-x: hidden
 
-a
-  text-decoration: none
-
 .page
   width: 100vw
   overflow-x: hidden
+  @media (min-width: 1024px)
+    padding-top: 100px
+
+.section
+  margin: 0
+  padding-top: 40px
+  padding-bottom: 40px
+  @media (min-width: 1200px)
+    padding-top: 80px
+    padding-bottom: 80px
+a
+  font-weight: 600
+  color: #888888
+  text-decoration: none
+  &:hover
+    color: $clr-major
+
+.container
+  box-sizing: border-box
+  width: 100%
+  padding-left: 5px
+  padding-right: 5px
+  @media (min-width: 576px)
+    max-width: 540px
+    margin-left: auto
+    margin-right: auto
+  @media (min-width: 768px)
+    max-width: 720px
+  @media (min-width: 992px)
+    max-width: 960px
+  @media (min-width: 1200px)
+    max-width: 1140px
+
+.section-title
+  position: relative
+  margin-bottom: 40px
+  text-align: center
+  font-weight: 600
+  color: $clr-major
+  @media (min-width: 1200px)
+    margin-bottom: 100px
+  &:before
+    content: ''
+    position: absolute
+    bottom: -20px
+    left: 50%
+    transform: translateX(-50%)
+    height: 8px
+    width: 60%
+    max-width: 200px
+    background-color: $clr-minor
+    border-radius: 10px
+    @media (min-width: 1200px)
+      bottom: -30px
+  &:after
+    content: ''
+    position: absolute
+    bottom: -30px
+    left: 50%
+    transform: translateX(-50%)
+    height: 20px
+    width: 20px
+    background-color: #FFCC73
+    border: 4px solid #fff
+    border-radius: 20px
+    @media (min-width: 1200px)
+      bottom: -40px
+
+.list
+  padding-left: 0
+  list-style-type: none
+  &__item
+    position: relative
+    padding-left: 20px
+    margin-bottom: 7px
+    font-size: .95em
+    font-weight: 600
+    &:before
+      content: '+'
+      position: absolute
+      left: 0
+      top: 2px
+      height: 13px
+      width: 13px
+      text-align: center
+      font-size: 13px
+      font-weight: 800
+      line-height: 12px
+      border-radius: 10px
+      color: #ffffff
+      background-color: $clr-minor
+
+.ws-btn-title
+  font-weight: 600
+
+.cbk-window.cbk-window-modal,
+.cbk-window.cbk-window-onexit
+  max-width: 340px!important
+
+.cbk-window.cbk-window-modal a.cbk-copyright-callbackkiller
+  visibility: hidden
+
+.ws-chat .ws-chat-container .ws-chat-copyright,
+.ws-chat .ws-chat-container .ws-chat-copyright-footer
+  visibility: hidden

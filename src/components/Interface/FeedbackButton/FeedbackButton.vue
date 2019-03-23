@@ -6,7 +6,11 @@
     >
       +7 (900) 006-99-39
     </a>
-    <simple-button class="feedback-button__btn btn_small">
+    <simple-button
+      class="feedback-button__btn btn_small"
+      id="ask_question"
+      is-external
+    >
       Задать вопрос
     </simple-button>
   </div>
@@ -28,9 +32,10 @@ export default {
   flex-direction: column
   align-items: center
   justify-content: space-around
+  min-height: 80px
   width: calc(100% - 83px * 2)
-  padding-top: 10px
-  padding-bottom: 10px
+  @media (min-width: 1024px)
+    width: auto
   &__link
     font-weight: 600
     color: #000000

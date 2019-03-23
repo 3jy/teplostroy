@@ -1,0 +1,112 @@
+.application-form
+  box-sizing: border-box
+  position: relative
+  min-width: 300px
+  padding:
+    top: 40px
+    left: 15px
+    right: 15px
+    bottom: 40px
+  background-color: #ffffff
+  border-radius: 5px
+  @media (min-width: 1200px)
+    padding:
+      top: 60px
+      left: 40px
+      right: 40px
+      bottom: 60px
+  &_base
+    width: 300px
+    @media (min-width: 1200px)
+      width: 400px
+  &__heading
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__title
+    margin: 0
+    font-size: 1.4em
+    color: $clr-major
+  &__subtitle
+    width: 100%
+    text-align: justify
+    font-size: 1.2em
+    &_accent
+      font-weight: 600
+      color: $clr-major
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__fieldset
+    position: relative
+    margin:
+      top: 0
+      left: 0
+      right: 0
+      bottom: 30px
+    padding: 0
+    border: none
+  &__label
+    position: absolute
+    left: 15px
+    bottom: .5em
+    color: #aaa
+    transition: .3s
+  &__input
+    box-sizing: border-box
+    display: block
+    width: 100%
+    padding-left: 15px
+    padding-right: 15px
+    font-size: 1.2em
+    line-height: 1.5
+    background-color: #ffffff
+    border:
+      top: none
+      left: none
+      right: none
+      bottom: 1px solid #262626
+    &:active,
+    &:focus
+      border-bottom: 2px solid $clr-major
+      outline: none
+    &:not(:placeholder-shown) + .application-form__label,
+    &:active + .application-form__label,
+    &:focus + .application-form__label,
+    &:hover + .application-form__label
+      left: 0
+      bottom: 2em
+      font-size: .9em
+      font-weight: 600
+      color: #262626
+      &:after
+        content: ':'
+    &:active + .application-form__label,
+    &:focus + .application-form__label
+      color: $clr-major
+      font-weight: 800
+  &__btn
+    margin-bottom: 20px
+  &__disclaimer
+    text-align: justify
+    font-size: .7em
+
+.close-popup
+  position: absolute
+  top: 5px
+  right: 20px
+  background-color: transparent
+  border: none
+  cursor: pointer
+  span
+    font-weight: 600
+    color: #888888
+    transition: .3s
+    &:after
+      content: "\2716"
+      position: absolute
+      font-size: 20px
+      line-height: 19px
+  &:hover span
+    color: #333333

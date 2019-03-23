@@ -8,5 +8,6 @@ module.exports = {
         path.resolve(__dirname, './src/sass/*.sass')
       ]
     }
-  }
+  },
+  publicPath: process.env.NODE_ENV === 'production' ? '/' : '/'
 }

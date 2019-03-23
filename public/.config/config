@@ -1,0 +1,11 @@
+{
+"host": "smtp.jino.ru",
+"to": "nampoputy@narod.ru",
+"from": "request@nampoputi.myjino.ru",
+"pswd": "T0yo%AsVzf^3",
+"smtpAuth": true,
+"smtpSecure": "ssl",
+"port": 465,
+"lang": "ru",
+"charset": "UTF-8"
+}

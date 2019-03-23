@@ -8,7 +8,7 @@
         class="main-menu__item"
       >
         <a
-          href="#"
+          href="#header"
           class="main-menu__link"
         >
           Начало
@@ -18,20 +18,40 @@
         class="main-menu__item"
       >
         <a
-          href="#"
+          href="#calculator"
           class="main-menu__link"
         >
-          Почему мы
+          Подбор
         </a>
       </li>
       <li
         class="main-menu__item"
       >
         <a
-          href="#"
+          href="#gift"
           class="main-menu__link"
         >
-          Расчёт
+          Подарок
+        </a>
+      </li>
+      <li
+        class="main-menu__item"
+      >
+        <a
+          href="#partners"
+          class="main-menu__link"
+        >
+          Партнеры
+        </a>
+      </li>
+      <li
+        class="main-menu__item"
+      >
+        <a
+          href="#contacts"
+          class="main-menu__link"
+        >
+          Контакты
         </a>
       </li>
     </ul>
@@ -56,11 +76,14 @@ export default {
 }
 </script>
 
-<style scoped lang="sass">
+<style lang="sass">
 .main-menu
   overflow-x: hidden
+  z-index: 4
+  @media (min-width: 1024px)
+    flex-grow: 2
   &__container
-    position: absolute
+    position: fixed
     top: 83px
     right: -100vw
     box-sizing: border-box
@@ -80,19 +103,41 @@ export default {
       padding-top: 20px
       padding-left: 30px
       transition: .3s
+    @media (min-width: 1024px)
+      flex-direction: row
+      align-items: center
+      justify-content: space-around
+      position: relative
+      top: auto
+      right: auto
+      height: 100%
+      width: auto
+      padding-left: 0
+      font-size: 1.2em
+      box-shadow: none
+      transition: .3s
   &__item
     padding: 10px
+    text-align: center
     list-style-type: none
   &__link
+    font-size: 2em
     color: #000000
     text-decoration: none
+    transition: .3s
+    @media (min-width: 1024px)
+      font-size: 1em
   &__button
-    position: absolute
-    top: 0
-    right: 0
-    height: 83px
-    width: 73px
+    position: fixed
+    top: 20px
+    right: 8px
+    height: 49px
+    width: 57px
+    background-color: #ffffff
+    border-radius: 5px
     overflow: hidden
+    @media (min-width: 1024px)
+      display: none
   &__bar,
   &__bar:after,
   &__bar:before
@@ -103,8 +148,8 @@ export default {
     border-radius: 9px
     transition: .3s
   &__bar
-    top: 35px
-    left: 10px
+    top: 20px
+    left: 2px
   &__bar:after,
   &__bar:before
     content: ''

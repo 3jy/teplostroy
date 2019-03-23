@@ -1,29 +1,18 @@
-# teplostroy
+# Теплострой | Сочи
 
-## Project setup
-```
-npm install
-```
+## Продающий лендинг
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Оптимизация продаж инженерных систем компании в г. Сочи.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Особенности реализации
 
-### Run your tests
-```
-npm run test
-```
+- SPA на Vue.js
+- Реальный онлайн-калькулятор стоимости системы отопления
+- Отправка на почту дополнительных сведений о том, в какой части лендинга пользователь обратился к форме
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Ближайшие планы
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Переход на Nuxt.js
+- Реализация подробного калькулятора стоимости инженерных коммуникаций на отдельной странице (ТЗ уточняется)
+- Реализация админки сайта (ТЗ уточняется)
+

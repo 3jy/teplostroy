@@ -1,0 +1,120 @@
+@import '@/sass/_colors.sass'
+.section-steps
+  background:
+    image: url('./SectionSteps_bg.jpg')
+    position: center
+    repeat: no-repeat
+    size: cover
+  .application-form__content
+    @media (min-width: 1024px)
+      flex-direction: row
+      justify-content: space-between
+  .application-form__subtitle
+    text-align: center
+.steps
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  @media (min-width: 400px)
+    flex-direction: row
+    flex-wrap: wrap
+    margin-bottom: 60px
+.step
+  display: flex
+  flex-direction: column
+  align-items: center
+  height: 145px
+  width: 145px
+  @media (min-width: 400px)
+    flex-direction: row
+    margin-left: 5px
+  &__content
+    box-sizing: border-box
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    height: 110px
+    width: 110px
+    padding: 5px
+    //background-color: $clr-minor-1
+    background-image: linear-gradient(135deg, rgba($clr-minor-1, .8) 0%, rgba($clr-minor-4, .8) 100%)
+    border-radius: 10px
+    &:before, &:after
+      position: absolute
+      top: 10px
+      width: 100%
+      height: 100%
+      color: #ffffff99
+      font-size: 80px
+      font-weight: 800
+      line-height: 100px
+    &:before
+      content: '0'
+      left: 0
+      text-align: left
+    &:after
+      right: 0
+      text-align: right
+  &__caption
+    position: relative
+    min-height: 30px
+    font-size: 12px
+    font-weight: 700
+    text-align: center
+    color: #ffffff
+    z-index: 1
+  &__picture
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 60px
+    width: 60px
+    z-index: 1
+    img
+      width: 100%
+      object-fit: cover
+  &__arrow
+    box-sizing: border-box
+    height: 30px
+    width: 30px
+    font-size: 26px
+    line-height: 22px
+    text-align: center
+    transform: rotate(90deg)
+    color: #ffffff
+    background-color: $clr-major-0
+    border: 2px solid #ffffff
+    border-radius: 50%
+    box-shadow: 0 0 0 1px $clr-major-3
+    @media (min-width: 400px)
+      margin-left: 5px
+      transform: rotate(0deg)
+.step-1
+  .step__content:after
+    content: '1'
+.step-2
+  .step__content:after
+    content: '2'
+.step-3
+  .step__content:after
+    content: '3'
+.step-4
+  .step__content:after
+    content: '4'
+.step-5
+  .step__content:after
+    content: '5'
+.step-6
+  .step__content:after
+    content: '6'
+.step-7
+  .step__content:after
+    content: '7'
+  //height: 100px
+  .step__caption
+    //display: none
+  .step__arrow
+    transform: rotate(0deg)

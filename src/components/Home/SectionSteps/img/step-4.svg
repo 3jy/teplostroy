@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Capa_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 590.10168 590.10168"
+   xml:space="preserve"
+   sodipodi:docname="step-4.svg"
+   width="590.10168"
+   height="590.10168"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
+   id="metadata61"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs59" /><sodipodi:namedview
+   pagecolor="#a9a9a9"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="2560"
+   inkscape:window-height="1379"
+   id="namedview57"
+   showgrid="false"
+   inkscape:pagecheckerboard="false"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0"
+   inkscape:zoom="0.4609375"
+   inkscape:cx="-227.79662"
+   inkscape:cy="295.05084"
+   inkscape:window-x="1920"
+   inkscape:window-y="33"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Capa_1" />
+<circle
+   style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.0764045;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+   id="path871"
+   cx="295.05084"
+   cy="-295.05084"
+   r="295.05084"
+   transform="scale(1,-1)" /><g
+   id="g8"
+   transform="translate(39.050842,39.050842)">
+	<path
+   style="fill:#ffc107"
+   d="m 128,160 c 0,-8.832 -7.168,-16 -16,-16 H 16 c -8.832,0 -16,7.168 -16,16 0,8.832 7.168,16 16,16 h 96 c 8.832,0 16,-7.168 16,-16 z"
+   id="path2"
+   inkscape:connector-curvature="0" />
+	<path
+   style="fill:#ffc107"
+   d="M 112,208 H 48 c -8.832,0 -16,7.168 -16,16 0,8.832 7.168,16 16,16 h 64 c 8.832,0 16,-7.168 16,-16 0,-8.832 -7.168,-16 -16,-16 z"
+   id="path4"
+   inkscape:connector-curvature="0" />
+	<path
+   style="fill:#ffc107"
+   d="M 112,272 H 80 c -8.832,0 -16,7.168 -16,16 0,8.832 7.168,16 16,16 h 32 c 8.832,0 16,-7.168 16,-16 0,-8.832 -7.168,-16 -16,-16 z"
+   id="path6"
+   inkscape:connector-curvature="0" />
+</g>
+<path
+   style="fill:#f44336"
+   d="m 548.77884,302.82684 -48,-80 c -2.88,-4.832 -8.096,-7.776 -13.728,-7.776 h -112 c -8.832,0 -16,7.168 -16,16 v 160 c 0,8.832 7.168,16 16,16 h 160 c 8.832,0 16,-7.168 16,-16 v -80 c 0,-2.912 -0.768,-5.76 -2.272,-8.224 z"
+   id="path10"
+   inkscape:connector-curvature="0" />
+<polygon
+   style="fill:#fafafa"
+   points="477.344,272 384,272 384,208 438.944,208 "
+   id="polygon12"
+   transform="translate(39.050842,39.050842)" />
+<path
+   style="fill:#ffc107"
+   d="m 375.05084,151.05084 h -224 c -8.832,0 -16,7.168 -16,16 v 224 c 0,8.832 7.168,16 16,16 h 240 v -240 c 0,-8.832 -7.168,-16 -16,-16 z"
+   id="path14"
+   inkscape:connector-curvature="0" />
+<circle
+   style="fill:#fafafa"
+   cx="471.05084"
+   cy="391.05084"
+   r="32"
+   id="circle16" />
+<path
+   style="fill:#455a64"
+   d="m 471.05084,439.05084 c -26.464,0 -48,-21.536 -48,-48 0,-26.464 21.536,-48 48,-48 26.464,0 48,21.536 48,48 0,26.464 -21.536,48 -48,48 z m 0,-64 c -8.8,0 -16,7.2 -16,16 0,8.8 7.2,16 16,16 8.8,0 16,-7.2 16,-16 0,-8.8 -7.2,-16 -16,-16 z"
+   id="path18"
+   inkscape:connector-curvature="0" />
+<path
+   style="fill:#f44336"
+   d="m 391.05084,407.05084 h -240 c -8.832,0 -16,-7.168 -16,-16 v -48 h 256 z"
+   id="path20"
+   inkscape:connector-curvature="0" />
+<circle
+   style="fill:#fafafa"
+   cx="247.05084"
+   cy="391.05084"
+   r="32"
+   id="circle22" />
+<path
+   style="fill:#455a64"
+   d="m 247.05084,439.05084 c -26.464,0 -48,-21.536 -48,-48 0,-26.464 21.536,-48 48,-48 26.464,0 48,21.536 48,48 0,26.464 -21.536,48 -48,48 z m 0,-64 c -8.832,0 -16,7.2 -16,16 0,8.8 7.168,16 16,16 8.832,0 16,-7.2 16,-16 0,-8.8 -7.168,-16 -16,-16 z"
+   id="path24"
+   inkscape:connector-curvature="0" />
+<g
+   id="g26"
+   transform="translate(39.050842,39.050842)">
+</g>
+<g
+   id="g28"
+   transform="translate(39.050842,39.050842)">
+</g>
+<g
+   id="g30"
+   transform="translate(39.050842,39.050842)">
+</g>
+<g
+   id="g32"
+   transform="translate(39.050842,39.050842)">
+</g>
+<g
+   id="g34"
+   transform="translate(39.050842,39.050842)">
+</g>
+<g
+   id="g36"
+   transform="translate(39.050842,39.050842)">
+</g>
+<g
+   id="g38"
+   transform="translate(39.050842,39.050842)">
+</g>
+<g
+   id="g40"
+   transform="translate(39.050842,39.050842)">
+</g>
+<g
+   id="g42"
+   transform="translate(39.050842,39.050842)">
+</g>
+<g
+   id="g44"
+   transform="translate(39.050842,39.050842)">
+</g>
+<g
+   id="g46"
+   transform="translate(39.050842,39.050842)">
+</g>
+<g
+   id="g48"
+   transform="translate(39.050842,39.050842)">
+</g>
+<g
+   id="g50"
+   transform="translate(39.050842,39.050842)">
+</g>
+<g
+   id="g52"
+   transform="translate(39.050842,39.050842)">
+</g>
+<g
+   id="g54"
+   transform="translate(39.050842,39.050842)">
+</g>
+</svg>
