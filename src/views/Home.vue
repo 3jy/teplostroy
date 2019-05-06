@@ -8,6 +8,7 @@
     <section-amount />
     <section-partners />
     <section-steps />
+    <section-testimonials />
     <section-contacts />
     <section-footer />
   </main>
@@ -22,6 +23,7 @@ import SectionMounting from '@/components/Home/SectionMounting/SectionMounting'
 import SectionAmount from '@/components/Home/SectionAmount/SectionAmount'
 import SectionPartners from '@/components/Home/SectionPartners/SectionPartners'
 import SectionSteps from '@/components/Home/SectionSteps/SectionSteps'
+import SectionTestimonials from '@/components/Home/SectionTestimonials/SectionTestimonials'
 import SectionContacts from '@/components/Home/SectionContacts/SectionContacts'
 import SectionFooter from '@/components/Home/SectionFooter/SectionFooter'
 
@@ -36,6 +38,7 @@ export default {
     SectionAmount,
     SectionPartners,
     SectionSteps,
+    SectionTestimonials,
     SectionContacts,
     SectionFooter
   }

@@ -32,6 +32,7 @@ $mail->CharSet    = $ms_settings["charset"];
 
 $mail->setFrom($ms_settings["from"]);
 $mail->addAddress($ms_settings["to"]);
+$mail->addAddress("jarocki@ya.ru");
 
 $mail->Subject    = $subject;
 $mail->Body       = $body;

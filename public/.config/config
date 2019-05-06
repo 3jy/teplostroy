@@ -1,6 +1,6 @@
 {
 "host": "smtp.jino.ru",
-"to": "nampoputy@narod.ru",
+"to": "nampoputi@narod.ru",
 "from": "request@nampoputi.myjino.ru",
 "pswd": "T0yo%AsVzf^3",
 "smtpAuth": true,
