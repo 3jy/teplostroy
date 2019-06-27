@@ -34,7 +34,6 @@ export default {
     return {
       details: [],
       testimonials: [],
-      dUrl: 'https://test.teplostroy.ooo/api/v1/details/',
       tUrl: 'https://test.teplostroy.ooo/api/v1/testimonials/',
       videoLink: ''
     }

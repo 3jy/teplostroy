@@ -259,16 +259,21 @@
       v-if="link"
       class="subheader"
     >
-      <div class="subheader__video">
-        <iframe
-          class="subheader__video-embed"
-          width="560"
-          height="315"
-          :src="link"
-          frameborder="0"
-          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        />
+      <div class="container">
+        <h2 class="section-title">
+          Благодарность наших клиентов
+        </h2>
+        <div class="subheader__video">
+          <iframe
+            class="subheader__video-embed"
+            width="560"
+            height="315"
+            :src="link"
+            frameborder="0"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          />
+        </div>
       </div>
     </section>
   </div>
@@ -463,9 +468,11 @@ export default {
 .subheader
   &__video
     position: relative
-    width: 100%
+    width: 80%
     height: 0
-    padding-bottom: 56.25%
+    margin-left: auto
+    margin-right: auto
+    padding-bottom: 45%
     background-color: #000000
     &-embed
       position: absolute
