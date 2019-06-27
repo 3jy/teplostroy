@@ -3,7 +3,7 @@
     <div class="container main-navigation__container">
       <company-logo />
       <main-menu />
-      <feedback-button />
+      <feedback-button :phone="phone" />
     </div>
   </nav>
 </template>
@@ -14,6 +14,12 @@ import MainMenu from '@/components/Interface/MainMenu/MainMenu'
 import FeedbackButton from '@/components/Interface/FeedbackButton/FeedbackButton'
 export default {
   name: 'MainNavigation',
+  props: {
+    phone: {
+      type: String,
+      default: ''
+    }
+  },
   components: {
     CompanyLogo,
     MainMenu,

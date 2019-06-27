@@ -1,259 +1,277 @@
 <template>
-  <header
-    class="header"
-    id="header"
-  >
-    <div class="header__slider">
-      <swiper :options="swiperOption">
-        <swiper-slide class="swiper-slide1">
-          <div class="container">
-            <div class="swiper-slide__section">
-              <div class="swiper-slide__header">
-                <h3 class="swiper-slide__title">
-                  Лазаревское
-                </h3>
-                <p class="swiper-slide__subtitle">
-                  Монтаж систем отопления, водоснабжения, канализации
-                </p>
-              </div>
-              <div class="swiper-slide__main">
-                <p>Виды работ на объекте:</p>
-                <ul class="work-list">
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_boiler" />
-                    <div class="work-list__content">
-                      Газовый котел с бойлером ГВС
-                    </div>
-                  </li>
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_warm-floor" />
-                    <div class="work-list__content">
-                      Теплые полы
-                    </div>
-                  </li>
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_radiators" />
-                    <div class="work-list__content">
-                      Панельные радиаторы
-                    </div>
-                  </li>
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_hot-water-supply" />
-                    <div class="work-list__content">
-                      Система ГВС с рециркуляцией
-                    </div>
-                  </li>
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_sewerage" />
-                    <div class="work-list__content">
-                      Канализация
-                    </div>
-                  </li>
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_sewerage" />
-                    <div class="work-list__content">
-                      Врезка в водопровод
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide class="swiper-slide2">
-          <div class="container">
-            <div class="swiper-slide__section">
-              <div class="swiper-slide__header">
-                <h3 class="swiper-slide__title">
-                  Адлер
-                </h3>
-                <p class="swiper-slide__subtitle">
-                  Монтаж систем отопления, водоснабжения, канализации
-                </p>
-              </div>
-              <div class="swiper-slide__main">
-                <p>Виды работ на объекте:</p>
-                <ul class="work-list">
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_boiler" />
-                    <div class="work-list__content">
-                      Электрокотел с бойлером ГВС
-                    </div>
-                  </li>
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_warm-floor" />
-                    <div class="work-list__content">
-                      Теплые полы
-                    </div>
-                  </li>
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_radiators" />
-                    <div class="work-list__content">
-                      Панельные радиаторы
-                    </div>
-                  </li>
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_hot-water-supply" />
-                    <div class="work-list__content">
-                      Система ГВС с рециркуляцией
-                    </div>
-                  </li>
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_sewerage" />
-                    <div class="work-list__content">
-                      Канализация
-                    </div>
-                  </li>
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_sewerage" />
-                    <div class="work-list__content">
-                      Врезка в водопровод
-                    </div>
-                  </li>
-                </ul>
+  <div>
+    <header
+      class="header"
+      id="header"
+    >
+      <div class="header__slider">
+        <swiper :options="swiperOption">
+          <swiper-slide class="swiper-slide1">
+            <div class="container">
+              <div class="swiper-slide__section">
+                <div class="swiper-slide__header">
+                  <h3 class="swiper-slide__title">
+                    Лазаревское
+                  </h3>
+                  <p class="swiper-slide__subtitle">
+                    Монтаж систем отопления, водоснабжения, канализации
+                  </p>
+                </div>
+                <div class="swiper-slide__main">
+                  <p>Виды работ на объекте:</p>
+                  <ul class="work-list">
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_boiler" />
+                      <div class="work-list__content">
+                        Газовый котел с бойлером ГВС
+                      </div>
+                    </li>
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_warm-floor" />
+                      <div class="work-list__content">
+                        Теплые полы
+                      </div>
+                    </li>
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_radiators" />
+                      <div class="work-list__content">
+                        Панельные радиаторы
+                      </div>
+                    </li>
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_hot-water-supply" />
+                      <div class="work-list__content">
+                        Система ГВС с рециркуляцией
+                      </div>
+                    </li>
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_sewerage" />
+                      <div class="work-list__content">
+                        Канализация
+                      </div>
+                    </li>
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_sewerage" />
+                      <div class="work-list__content">
+                        Врезка в водопровод
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide class="swiper-slide3">
-          <div class="container">
-            <div class="swiper-slide__section">
-              <div class="swiper-slide__header">
-                <h3 class="swiper-slide__title">
-                  Красная Поляна
-                </h3>
-                <p class="swiper-slide__subtitle">
-                  Монтаж систем отопления, водоснабжения, канализации
-                </p>
-              </div>
-              <div class="swiper-slide__main">
-                <p>Виды работ на объекте:</p>
-                <ul class="work-list">
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_boiler" />
-                    <div class="work-list__content">
-                      Газовый двухконтурный котел
-                    </div>
-                  </li>
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_warm-floor" />
-                    <div class="work-list__content">
-                      Теплые полы
-                    </div>
-                  </li>
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_radiators" />
-                    <div class="work-list__content">
-                      Панельные радиаторы
-                    </div>
-                  </li>
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_hot-water-supply" />
-                    <div class="work-list__content">
-                      Система ГВС с рециркуляцией
-                    </div>
-                  </li>
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_sewerage" />
-                    <div class="work-list__content">
-                      Канализация
-                    </div>
-                  </li>
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_sewerage" />
-                    <div class="work-list__content">
-                      Врезка в водопровод
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide class="swiper-slide4">
-          <div class="container">
-            <div class="swiper-slide__section">
-              <div class="swiper-slide__header">
-                <h3 class="swiper-slide__title">
-                  Горное Лоо
-                </h3>
-                <p class="swiper-slide__subtitle">
-                  Монтаж систем отопления, водоснабжения, канализации
-                </p>
-              </div>
-              <div class="swiper-slide__main">
-                <p>Виды работ на объекте:</p>
-                <ul class="work-list">
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_boiler" />
-                    <div class="work-list__content">
-                      Электрокотел с бойлером ГВС
-                    </div>
-                  </li>
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_warm-floor" />
-                    <div class="work-list__content">
-                      Теплые полы
-                    </div>
-                  </li>
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_radiators" />
-                    <div class="work-list__content">
-                      Панельные радиаторы
-                    </div>
-                  </li>
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_hot-water-supply" />
-                    <div class="work-list__content">
-                      Система ГВС с рециркуляцией
-                    </div>
-                  </li>
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_sewerage" />
-                    <div class="work-list__content">
-                      Канализация
-                    </div>
-                  </li>
-                  <li class="work-list__item">
-                    <div class="work-list__picture work-list__picture_sewerage" />
-                    <div class="work-list__content">
-                      Врезка в водопровод
-                    </div>
-                  </li>
-                </ul>
+          </swiper-slide>
+          <swiper-slide class="swiper-slide2">
+            <div class="container">
+              <div class="swiper-slide__section">
+                <div class="swiper-slide__header">
+                  <h3 class="swiper-slide__title">
+                    Адлер
+                  </h3>
+                  <p class="swiper-slide__subtitle">
+                    Монтаж систем отопления, водоснабжения, канализации
+                  </p>
+                </div>
+                <div class="swiper-slide__main">
+                  <p>Виды работ на объекте:</p>
+                  <ul class="work-list">
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_boiler" />
+                      <div class="work-list__content">
+                        Электрокотел с бойлером ГВС
+                      </div>
+                    </li>
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_warm-floor" />
+                      <div class="work-list__content">
+                        Теплые полы
+                      </div>
+                    </li>
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_radiators" />
+                      <div class="work-list__content">
+                        Панельные радиаторы
+                      </div>
+                    </li>
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_hot-water-supply" />
+                      <div class="work-list__content">
+                        Система ГВС с рециркуляцией
+                      </div>
+                    </li>
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_sewerage" />
+                      <div class="work-list__content">
+                        Канализация
+                      </div>
+                    </li>
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_sewerage" />
+                      <div class="work-list__content">
+                        Врезка в водопровод
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-        </swiper-slide>
-      </swiper>
-    </div>
-    <div class="container header__container">
-      <div class="header__heading">
-        <h1 class="header__title">
-          <span class="header__title_accent">
-            Монтаж
-          </span>
-          <span>отопления частного дома</span>
-          <span class="header__title_accent">
-            «под ключ»
-          </span>
-        </h1>
-        <p class="header__subtitle">
-          <span class="header__subtitle_accent">
-            от 1&nbsp;290 руб.
-          </span>
-          за квадратный метр
-        </p>
+          </swiper-slide>
+          <swiper-slide class="swiper-slide3">
+            <div class="container">
+              <div class="swiper-slide__section">
+                <div class="swiper-slide__header">
+                  <h3 class="swiper-slide__title">
+                    Красная Поляна
+                  </h3>
+                  <p class="swiper-slide__subtitle">
+                    Монтаж систем отопления, водоснабжения, канализации
+                  </p>
+                </div>
+                <div class="swiper-slide__main">
+                  <p>Виды работ на объекте:</p>
+                  <ul class="work-list">
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_boiler" />
+                      <div class="work-list__content">
+                        Газовый двухконтурный котел
+                      </div>
+                    </li>
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_warm-floor" />
+                      <div class="work-list__content">
+                        Теплые полы
+                      </div>
+                    </li>
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_radiators" />
+                      <div class="work-list__content">
+                        Панельные радиаторы
+                      </div>
+                    </li>
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_hot-water-supply" />
+                      <div class="work-list__content">
+                        Система ГВС с рециркуляцией
+                      </div>
+                    </li>
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_sewerage" />
+                      <div class="work-list__content">
+                        Канализация
+                      </div>
+                    </li>
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_sewerage" />
+                      <div class="work-list__content">
+                        Врезка в водопровод
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="swiper-slide4">
+            <div class="container">
+              <div class="swiper-slide__section">
+                <div class="swiper-slide__header">
+                  <h3 class="swiper-slide__title">
+                    Горное Лоо
+                  </h3>
+                  <p class="swiper-slide__subtitle">
+                    Монтаж систем отопления, водоснабжения, канализации
+                  </p>
+                </div>
+                <div class="swiper-slide__main">
+                  <p>Виды работ на объекте:</p>
+                  <ul class="work-list">
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_boiler" />
+                      <div class="work-list__content">
+                        Электрокотел с бойлером ГВС
+                      </div>
+                    </li>
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_warm-floor" />
+                      <div class="work-list__content">
+                        Теплые полы
+                      </div>
+                    </li>
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_radiators" />
+                      <div class="work-list__content">
+                        Панельные радиаторы
+                      </div>
+                    </li>
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_hot-water-supply" />
+                      <div class="work-list__content">
+                        Система ГВС с рециркуляцией
+                      </div>
+                    </li>
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_sewerage" />
+                      <div class="work-list__content">
+                        Канализация
+                      </div>
+                    </li>
+                    <li class="work-list__item">
+                      <div class="work-list__picture work-list__picture_sewerage" />
+                      <div class="work-list__content">
+                        Врезка в водопровод
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper>
       </div>
-      <div class="header__content">
-        <application-form
-          class="application-form_base"
-          form-id="header"
-          from="header"
+      <div class="container header__container">
+        <div class="header__heading">
+          <h1 class="header__title">
+            <span class="header__title_accent">
+              Монтаж
+            </span>
+            <span>отопления частного дома</span>
+            <span class="header__title_accent">
+              «под ключ»
+            </span>
+          </h1>
+          <p class="header__subtitle">
+            <span class="header__subtitle_accent">
+              от 1&nbsp;290 руб.
+            </span>
+            за квадратный метр
+          </p>
+        </div>
+        <div class="header__content">
+          <application-form
+            class="application-form_base"
+            form-id="header"
+            from="header"
+          />
+        </div>
+      </div>
+    </header>
+    <section
+      v-if="link"
+      class="subheader"
+    >
+      <div class="subheader__video">
+        <iframe
+          class="subheader__video-embed"
+          width="560"
+          height="315"
+          :src="link"
+          frameborder="0"
+          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
         />
       </div>
-    </div>
-  </header>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -271,6 +289,12 @@ export default {
           disableOnInteraction: false
         }
       }
+    }
+  },
+  props: {
+    link: {
+      type: String,
+      default: ''
     }
   },
   components: {
@@ -436,4 +460,18 @@ export default {
       font-weight: 800
       color: #000
       text-shadow: 0 0 1px #fff
+.subheader
+  &__video
+    position: relative
+    width: 100%
+    height: 0
+    padding-bottom: 56.25%
+    background-color: #000000
+    &-embed
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      border: none
 </style>

@@ -1,6 +1,6 @@
 <template>
   <main class="page home-page main">
-    <section-header />
+    <section-header :link="videoLink" />
     <section-advantages />
     <section-calculator />
     <section-gift />
@@ -8,13 +8,14 @@
     <section-amount />
     <section-partners />
     <section-steps />
-    <section-testimonials />
+    <section-testimonials :data="testimonials" />
     <section-contacts />
     <section-footer />
   </main>
 </template>
 
 <script>
+import Axios from 'axios'
 import SectionHeader from '@/components/Home/SectionHeader/SectionHeader'
 import SectionAdvantages from '@/components/Home/SectionAdvantages/SectionAdvantages'
 import SectionCalculator from '@/components/Home/SectionCalculator/SectionCalculator'
@@ -29,6 +30,15 @@ import SectionFooter from '@/components/Home/SectionFooter/SectionFooter'
 
 export default {
   name: 'Home',
+  data () {
+    return {
+      details: [],
+      testimonials: [],
+      dUrl: 'https://test.teplostroy.ooo/api/v1/details/',
+      tUrl: 'https://test.teplostroy.ooo/api/v1/testimonials/',
+      videoLink: ''
+    }
+  },
   components: {
     SectionHeader,
     SectionAdvantages,
@@ -41,6 +51,14 @@ export default {
     SectionTestimonials,
     SectionContacts,
     SectionFooter
+  },
+  async created () {
+    const { data: testimonials } = await Axios.get(this.tUrl, { await: true })
+    this.testimonials = [...testimonials.sort((a, b) => Number(b.id) - Number(a.id))]
+
+    this.videoLink = testimonials
+      .sort((a, b) => Number(b.id) - Number(a.id))
+      .find(testimonial => testimonial.video !== '').video
   }
 }
 </script>

@@ -1,5 +1,6 @@
 <template>
   <section
+    v-if="!loading"
     class="section section-contacts"
     id="contacts"
   >
@@ -19,7 +20,7 @@
                 target="_blank"
               >
                 <span class="fas fa-map-marker-alt" />
-                г. Сочи, ул. Гайдара, 2
+                {{ details.address }}
               </a>
             </p>
           </div>
@@ -45,19 +46,19 @@
             <ul class="partition__content">
               <li>
                 <span class="far fa-copy" />
-                ООО "ТЕПЛОСТРОЙ"
+                {{ details['title-long'] }}
               </li>
               <li>
                 <span class="far fa-copy" />
-                ИНН 2320146796
+                ИНН {{ details.inn }}
               </li>
               <li>
                 <span class="far fa-copy" />
-                КПП 231801001
+                КПП {{ details.kpp }}
               </li>
               <li>
                 <span class="far fa-copy" />
-                ОГРН 1072320000170
+                ОГРН {{ details.ogrn }}
               </li>
             </ul>
           </div>
@@ -67,15 +68,15 @@
             </h3>
             <ul class="partition__content">
               <li>
-                <a href="tel:+79000069939">
+                <a :href="`tel:${details.phone.replace(/[^+0-9]/g,'')}`">
                   <span class="fas fa-phone" />
-                  +7 (900) 006-99-39
+                  {{ details.phone }}
                 </a>
               </li>
               <li>
-                <a href="mailto:+79000069939@yandex.ru">
+                <a :href="`mailto:${details.email}`">
                   <span class="fas fa-at" />
-                  +79000069939@yandex.ru
+                  {{ details.email }}
                 </a>
               </li>
             </ul>
@@ -92,7 +93,24 @@
 </template>
 
 <script>
+import Axios from 'axios'
 export default {
+  data () {
+    return {
+      dUrl: 'https://test.teplostroy.ooo/api/v1/details/',
+      details: {},
+      loading: false
+    }
+  },
+  created () {
+    this.loading = true
+    Axios
+      .get(this.dUrl)
+      .then(({ data }) => {
+        data.forEach(detail => { this.details[detail.name] = detail.value })
+        this.loading = false
+      })
+  }
 }
 </script>
 

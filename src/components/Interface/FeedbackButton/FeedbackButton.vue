@@ -1,10 +1,10 @@
 <template>
   <div class="feedback-button">
     <a
-      href="tel:+79000069939"
+      :href="`tel:${phone.replace(/[^+0-9]/g,'')}`"
       class="feedback-button__link"
     >
-      +7 (900) 006-99-39
+      {{ phone }}
     </a>
     <simple-button
       class="feedback-button__btn btn_small"
@@ -20,6 +20,12 @@
 import SimpleButton from '@/components/Interface/SimpleButton/SimpleButton'
 export default {
   name: 'FeedbackButton',
+  props: {
+    phone: {
+      type: String,
+      default: ''
+    }
+  },
   components: {
     SimpleButton
   }
