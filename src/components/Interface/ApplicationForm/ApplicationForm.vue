@@ -114,6 +114,9 @@ export default {
   },
   methods: {
     mailTo () {
+      // для calltouch метрики
+      window.ym(52879765, 'reachGoal', 'CBK_CALL')
+
       let formData = new FormData()
       let body = ''
       let subj = 'Теплострой-Сочи | Клиент отправил заявку из '
